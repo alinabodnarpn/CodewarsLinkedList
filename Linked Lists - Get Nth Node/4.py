@@ -14,3 +14,6 @@ def get_nth(node, index):
             return current
         current = current.next
         count += 1
+    if current is None:
+        raise Exception("Index out of range")
+
