@@ -1,4 +1,6 @@
 def swap_pairs(head):
+    if not head or not head.next:
+        return head
     prev = None
     current = head
     head = current.next
